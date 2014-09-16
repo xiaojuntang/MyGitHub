@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/s_layout_first"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/mi_bottombg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/SupportChangeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96.0dip"
+            android:paddingRight="96.0dip"
+            android:shadowColor="@color/version_check_txt_shadowcolor"
+            android:shadowDy="-1.0"
+            android:shadowRadius="0.2"
+            android:singleLine="true"
+            android:text="@string/title_settingname"
+            android:textColor="@color/white"
+            android:textSize="19.0sp" />
+
+        <include layout="@layout/user_layout_btnback" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_layout_first" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>1|要闻</item>
+        <item>2|四川</item>
+        <item>3|娱乐</item>
+        <item>4|财经</item>
+        <item>5|体育</item>
+        <item>6|科技</item>
+        <item>7|社会</item>
+        <item>8|军事</item>
+        <item>9|时尚</item>
+    </string-array>
+</resources>

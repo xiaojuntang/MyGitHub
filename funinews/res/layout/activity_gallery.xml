@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <Gallery
+            android:id="@+id/gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:spacing="0dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="bottom"
+            android:background="#80776f63"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/dot_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dot_selected" />
+
+            <ImageView
+                android:id="@+id/dot_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/dot_1"
+                android:src="@drawable/dot_selected" />
+
+            <ImageView
+                android:id="@+id/dot_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/dot_2"
+                android:src="@drawable/dot_selected" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

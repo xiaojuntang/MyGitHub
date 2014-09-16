@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/mi_bottombg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/SupportChangeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96.0dip"
+            android:paddingRight="96.0dip"
+            android:shadowColor="@color/version_check_txt_shadowcolor"
+            android:shadowDy="-1.0"
+            android:shadowRadius="0.2"
+            android:singleLine="true"
+            android:text="更新日志"
+            android:textColor="@color/white"
+            android:textSize="19.0sp" />
+
+        <TextView
+            style="@style/SupportChangeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_back_left_selector"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxWidth="100.0dip"
+            android:minWidth="68.0dip"
+            android:shadowColor="@color/version_check_txt_shadowcolor"
+            android:shadowDy="-1.0"
+            android:shadowRadius="0.2"
+            android:singleLine="true"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="14.0sp" />
+
+        <TextView
+            style="@style/SupportChangeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_button_right_selector"
+            android:drawablePadding="0.0dip"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxWidth="100.0dip"
+            android:minWidth="68.0dip"
+            android:shadowColor="@color/version_check_txt_shadowcolor"
+            android:shadowDy="-1.0"
+            android:shadowRadius="0.2"
+            android:singleLine="true"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.funi.news.usercontrol.UserListView
+        android:id="@+id/setting_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/app_list_corner_border"
+        android:cacheColorHint="#00000000" >
+    </com.funi.news.usercontrol.UserListView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeofflinemap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_top_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="离线地图"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/open_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeSatellite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_center_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="卫星图"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+              <com.funi.news.usercontrol.SlideSwitch
+                    android:id="@+id/slipbut2"
+                    android:layout_width="75dip"
+                    android:layout_height="46dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip" >
+                </com.funi.news.usercontrol.SlideSwitch>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeZoom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_center_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="缩放控件"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                 <com.funi.news.usercontrol.SlideSwitch
+                    android:id="@+id/slipbut1"
+                    android:layout_width="55dip"
+                    android:layout_height="46dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip" >
+                </com.funi.news.usercontrol.SlideSwitch>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_center_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="意见反馈"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/open_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeChangePsd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_center_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="修改密码"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/open_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_about"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="11111111111"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/open_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="11111111111"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+</LinearLayout>

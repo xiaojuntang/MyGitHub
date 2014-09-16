@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- ListView最左边的缩略图 -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/houseimage_border_bj"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/house_image"
+            android:layout_width="75dip"
+            android:layout_height="60dip"
+            android:contentDescription="@string/imagedec"
+            android:scaleType="fitXY"
+             />
+    </LinearLayout>
+
+    <!-- 项目名称 -->
+
+    <TextView
+        android:id="@+id/text_housename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="北京城建.龙樾湾"
+        android:textColor="#282928"
+        android:textSize="12dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- 项目地址 -->
+
+    <TextView
+        android:id="@+id/text_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_housename"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="双流县双楠大道银河路160号"
+        android:textColor="#7f7c77"
+        android:textSize="10dip" />
+
+    <!-- 项目价格 -->
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_address"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="10,300元/平米"
+        android:textColor="#ff7900"
+        android:textSize="10dip" />
+
+    <!-- 更新时间 -->
+
+    <TextView
+        android:id="@+id/text_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/text_housename"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="2014-3-11"
+        android:textColor="#10bcc9"
+        android:textSize="10dip" />
+
+    <!-- 进入详细 -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/imagedec"
+        android:src="@drawable/open_arrow" />
+
+</RelativeLayout>

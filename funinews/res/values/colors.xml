@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="version_check_txt_shadowcolor">#7f000000</color>
+    <color name="menunoselect">#848484</color>
+ <color name="menuselect">#2b61c0</color>
+</resources>
